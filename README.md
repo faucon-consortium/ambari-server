@@ -27,6 +27,24 @@ Ambari enables Application Developers and System Integrators to:
 1. [Install Ambari from *Public* Packages**](#1-Install-Ambari-from-Public-Packages)
     1. [Create Ambari User](#1-1-Create-Ambari-User)
     2. [Install Ambari DB Engine](#1-2-Install-Ambari-DB-Engine)
+        2.1. [Package Repository](#1-2-1-Package-Repository)
+        2.2. [Package Installation](#1-2-2-Package-Installation)
+        2.3. [Testing](#1-2-3--Testing)  
+    3. [Network Configuration File](#1-3-Network-Configuration-File)  
+    4. [IPTables Settings](#1-4-IP-Tables-Settings)
+    5. [SELinux and PackageKit Settings](#1-5-SELinux-an-PackageKit-Settings)
+    6. [UMASK Settings](#1-6-UMASK-Settings)
+    
+2. Cat
+    1. Siberian
+    2. Siamese
+
+-----------------------------
+## Table-of-Contents
+
+1. [Install Ambari from *Public* Packages**](#1-Install-Ambari-from-Public-Packages)
+    1. [Create Ambari User](#1-1-Create-Ambari-User)
+    2. [Install Ambari DB Engine](#1-2-Install-Ambari-DB-Engine)
         1. [Package Repository](#1-2-1-Package-Repository)
         2. [Package Installation](#1-2-2-Package-Installation)
         3. [Testing](#1-2-3--Testing)  
