@@ -21,6 +21,16 @@ Ambari enables System Administrators to:
 Ambari enables Application Developers and System Integrators to:
 + Easily integrate Hadoop provisioning, management, and monitoring capabilities to their own applications with the Ambari REST APIs.
 
+1. Dog
+    1. German Shepherd
+    2. Belgian Shepherd
+        1. Malinois
+        2. Groenendael
+        3. Tervuren
+2. Cat
+    1. Siberian
+    2. Siamese
+
 -----------------------------
 ## Table-of-Contents
 
