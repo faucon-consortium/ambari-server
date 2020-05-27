@@ -17,21 +17,21 @@
     2. Siamese
 
 #### Contents:
-- [1. Install Ambari from **Public Packages**](#i.Install-Ambari-from-Public-Packages)
+- 1). [Install Ambari from **Public Packages**](#i.Install-Ambari-from-Public-Packages)
     - 1.1.) [Create Ambari User](#1-1-Create-Ambari-User)
     - 1.2.) Install Ambari DB Engine:
          - [1.2.1 Package Repository](#1-2-1-Package-Repository)
          - [1.2.2. Package Installation](#1-2-2-Package-Installation)
          - [1.2.3. Testing](#1-2-3--Testing)
-            - [1.2.3. Testing](#1-2-3--Testing)
+            - 1.2.3.1 [Testing alone](#1-2-3--Testing)
           
     - 1.3.) [Network Configuration File](#1-3-Network-Configuration-File)
     - 1.4) [IP Tables Settings](#1-4-IP-Tables-Settings)
     - 1.5) [SELinux and PackageKit Settings](#1-5-SELinux-an-PackageKit-Settings)
     - 1.6) [UMASK Settings](#1-6-UMASK-Settings)
 
-- [II. Gather required Ambari and Solr parameters](#0-gather-params)
-- [III. Backup Solr Collections](#ii.-backup-collections-(ambari-2.6.x-to-ambari-2.7.x))
+- 2). [Gather required Ambari and Solr parameters](#0-gather-params)
+- 3). [Backup Solr Collections](#ii.-backup-collections-(ambari-2.6.x-to-ambari-2.7.x))
     - a.) If you have Ranger Ambari service with Solr audits:
         - [1. Backup Ranger collection](#ii/1.-backup-ranger-collection)
         - [2. Backup Ranger configs on Solr ZNode](#ii/2.-backup-ranger-configs-on-solr-znode)
