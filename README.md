@@ -20,9 +20,9 @@
 - [I. Install Ambari from **Public Packages**](#i.Install-Ambari-from-Public-Packages)
     - I.1.) [Create Ambari User](#1-1-Create-Ambari-User)
     - I.2.) Install Ambari DB Engine:
-        - [1. Package Repository](#1-2-1-Package-Repository)
-        - [2. Package Installation](#1-2-2-Package-Installation)
-        - [3. Testing](#1-2-3--Testing)
+         - [1. Package Repository](#1-2-1-Package-Repository)
+         - [I.2.2. Package Installation](#1-2-2-Package-Installation)
+         - [3. Testing](#1-2-3--Testing)
     - I.3.) [Network Configuration File](#1-3-Network-Configuration-File)
     - I.4) [IP Tables Settings](#1-4-IP-Tables-Settings)
     - I.5) [SELinux and PackageKit Settings](#1-5-SELinux-an-PackageKit-Settings)
