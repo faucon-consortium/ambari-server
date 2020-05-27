@@ -1,18 +1,32 @@
 #### Contents:
+- [<a id="i.Install-Ambari-from-Public-Packages">I. Install Ambari from Public Packages</a>](#-a-id--iinstall-ambari-from-public-packages--i-install-ambari-from-public-packages--a-)
+  * [1-1-Create-Ambari-User](#1-1-create-ambari-user)
+  * [1-2-Install-Ambari-DB-Engine](#1-2-install-ambari-db-engine)
+    + [Package-Repository](#1-2-1-package-repository)
+    * [Package-Installation](#1-2-2-package-installation)
+    - [Testing](#1-2-3--testing)
+  * [1-3-Network-Configuration-File](#1-3-network-configuration-file)
+  * [1-4-IP-Tables-Settings](#1-4-ip-tables-settings)
+  * [1-5-SELinux-an-PackageKit-Settings](#1-5-selinux-an-packagekit-settings)
+  * [1-6-UMASK-Settings](#1-6-umask-settings)
+  * [1.7-Install Ambari-Packages](#17-install-ambari-packages)
+
+
 ## Table-of-Contents
-1. [Install Ambari from **Public Packages**](#i.Install-Ambari-from-Public-Packages)
+1. [**Install Ambari from Public Packages**](#i.Install-Ambari-from-Public-Packages)
     1. [Create Ambari User](#1-1-Create-Ambari-User)
     2. [Install Ambari DB Engine](#1-2-Install-Ambari-DB-Engine)
-        1. [Package Repository](#1-2-1-Package-Repository)
-        2. [Package Installation](#1-2-2-Package-Installation)
-        3. [Testing](#1-2-3--Testing)  
+        1. [*Package Repository*](#1-2-1-Package-Repository)
+        2. [*Package Installation*](#1-2-2-Package-Installation)
+           1. dssd
+        3. [*Testing*](#1-2-3--Testing)  
     3. [Network Configuration File](#1-3-Network-Configuration-File)  
     4. [IPTables Settings](#1-4-IP-Tables-Settings)
     5. [SELinux and PackageKit Settings](#1-5-SELinux-an-PackageKit-Settings)
     6. [UMASK Settings](#1-6-UMASK-Settings)
     
 
-2. Cat
+2. **Cat**
     1. Siberian
     2. Siamese
 
