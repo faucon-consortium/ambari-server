@@ -21,38 +21,23 @@ Ambari enables System Administrators to:
 Ambari enables Application Developers and System Integrators to:
 + Easily integrate Hadoop provisioning, management, and monitoring capabilities to their own applications with the Ambari REST APIs.
 
+-----------------------------
+## Table-of-Contents
+
 1. [Install Ambari from *Public* Packages**](#1-Install-Ambari-from-Public-Packages)
-    1. [Create Ambari User](#1.1-Create-Ambari-User)
-    2. [Install Ambari DB Engine](#1.2-Install-Ambari-DB-Engine)
-        1. [Package Repository](#1.2.1-Package-Repository)
-        2. [Package Installation](#1.2.2-Packages-Installation)
-        3. [Testing](#1.2.3-Testing)  
-    3. [Network Configuration File](#1.3-Network-Configuration-File)  
-    4. [IPTables Settings](#1.4-IPTables-Settings)
-    5. [SELinux and PackageKit Settings](#1.5-SELinux-an-PackageKit-settings)
-    6. [UMASK Settings](#1.6-UMASK-Settings)
+    1. [Create Ambari User](#1-1-Create-Ambari-User)
+    2. [Install Ambari DB Engine](#1-2-Install-Ambari-DB-Engine)
+        1. [Package Repository](#1-2-1-Package-Repository)
+        2. [Package Installation](#1-2-2-Package-Installation)
+        3. [Testing](#1-2-3--Testing)  
+    3. [Network Configuration File](#1-3-Network-Configuration-File)  
+    4. [IPTables Settings](#1-4-IP-Tables-Settings)
+    5. [SELinux and PackageKit Settings](#1-5-SELinux-an-PackageKit-Settings)
+    6. [UMASK Settings](#1-6-UMASK-Settings)
     
 2. Cat
     1. Siberian
     2. Siamese
-
-
------------------------------
-## Table-of-Contents
-
-+ **1.  [Install Ambari from *Public* Packages**](#1-Install-Ambari-from-Public-Packages)  
-  + 1.1 [Create Ambari User](#1.1-Create-Ambari-User)  
-  + 1.2 [Install Ambari DB Engine](#1.2-Install-Ambari-DB-Engine)  
-    + 1.2.1 [Package Repository](#1.2.1-Package-Repository)  
-    + 1.2.2 [Package Installation](#1.2.2-Packages-Installation)  
-    + 1.2.3 [Testing](1.2.3-Testing)  
-
-  + 1.3 [Network Configuration File](#1.3-Network-Configuration-File)  
-  + 1.4 [IPTables Settings](#1.4-IPTables-Settings)  
-  + 1.5 [SELinux and PackageKit Settings](#1.5-SELinux-an-PackageKit-settings)  
-  + 1.6 [UMASK Settings](#1.6-UMASK-Settings)  
-  + 1.7 [Databases Creation](#1.7-**Databases**-Creation)  
-
 
 
 -----------------------------
@@ -61,7 +46,7 @@ The last **public verion** of Ambari packages is the **2.7.4.0-118**. The latest
 
 This procedure is the simplest and preferred installation mode.
 
-#### 1.1-Create-Ambari-User
+#### 1-1-Create-Ambari-User
 Create *a user login* dedicated to **Ambari** or choose your one! :
 ```
 sudo groupadd ambari
@@ -73,7 +58,7 @@ sudo passwd ambari -> <your password>
 
 -----------------------------
 
-#### 1.2-Install-Ambari-DB-Engine
+#### 1-2-Install-Ambari-DB-Engine
 In the box, Ambari provide a embedded PostgreSQL database instance.
 It's possible to use several existing databases:
 + Oracle
@@ -83,7 +68,7 @@ It's possible to use several existing databases:
 
 In my case, I choose my PostgreSQL instance as Amabri database.
 
- + ##### 1.2.1-Package-Repository
+ + ##### 1-2-1-Package-Repository
 
       ```
       wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
@@ -114,13 +99,13 @@ In my case, I choose my PostgreSQL instance as Amabri database.
       ```
     [back](#Table-of-Contents)
 
- + ##### 1.2.2-Packages-Installation
+ + ##### 1-2-2-Package-Installation
     ```
     sudo apt install postgresql-12 postgresql-server-dev-12 postgresql-doc-12 postgresql-client-12 postgresql-12-pljava postgresql-contrib
     ```
     [back](#Table-of-Contents)
     
- + ##### 1.2.3-Testing
+ + ##### 1-2-3--Testing
     To verify that your PostgreSQL installation is successfully, perform the following operations:
     ```
     sudo su - postgres
@@ -137,7 +122,7 @@ In my case, I choose my PostgreSQL instance as Amabri database.
 
 -----------------------------
 
-#### 1.3-Network-Configuration-File
+#### 1-3-Network-Configuration-File
 ```
 cd /etc/network
 touch network
@@ -153,7 +138,7 @@ hostname -A
 
 -----------------------------
 
-#### 1.4-IPTables-Settings
+#### 1-4-IP-Tables-Settings
 For Ambari to communicate during setup with the hosts it deploys to and manages, certain ports must be open and available. The easiest way to do this is to temporarily disable iptables, as follows:
 ```
 // If "ufw" command not found, install it by running:
@@ -173,7 +158,7 @@ sudo iptables -P OUTPUT ACCEPT
 
 -----------------------------
 
-#### 1.5-SELinux-an-PackageKit-Settings 
+#### 1-5-SELinux-an-PackageKit-Settings
 You must disable SELinux for the Ambari setup to function. On each host in your cluster, enter:
 ```
 setenforce 0
@@ -186,7 +171,7 @@ To permanently disable SELinux set **SELINUX=disabled** in ```/etc/selinux/confi
 
 -----------------------------
 
-#### 1.6-UMASK-Settings
+#### 1-6-UMASK-Settings
 UMASK (User Mask or User file creation MASK) sets the default permissions or base permissions granted when a new file or folder is created on a Linux machine. Most Linux distros set **022** as the default umask value. A umask value of **022** grants read, write, execute permissions of 755 for new files or folders. A umask value of **027** grants read, write, execute permissions of 750 for new files or folders.
 
 Ambari HDP support umask values of **022** (0022 is functionally equivalent), **027** (0027 is functionally equivalent).
