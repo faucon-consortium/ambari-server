@@ -24,21 +24,18 @@ Ambari enables Application Developers and System Integrators to:
 -----------------------------
 ## Table-of-Contents
 
-1. [Install Ambari from *Public* Packages](#1-Install-Ambari-from-Public-Packages)
-1.1 [Create Ambari User](#1.1-Create-Ambari-User)
-1.2 [Install Ambari DB Engine](#1.2-Install-Ambari-DB-Engine)
-   + 1.2.1 [Package Repository](#1.2.1-Package-Repository)
-   + 1.2.2 [Package Installation](#1.2.2-Packages-Installation)
-   + 1.2.3 [Testing](1.2.3-Testing)
-   
-   1.3 [Network Configuration File](#1.3-Network-Configuration-File)
-   1.4 [IPTables Settings](#1.4-IPTables-Settings)
-   1.5 [SELinux and PackageKit Settings](#1.5-SELinux-an-PackageKit-settings)
-   1.6 [UMASK Settings](#1.6-UMASK-Settings)
-   1.7 [Databases Creation](#1.7-Databases-Creation)
++ 1.  [Install Ambari from *Public* Packages](#1-Install-Ambari-from-Public-Packages)  
+  + 1.1 [Create Ambari User](#1.1-Create-Ambari-User)  
+  + 1.2 [Install Ambari DB Engine](#1.2-Install-Ambari-DB-Engine)  
+    + 1.2.1 [Package Repository](#1.2.1-Package-Repository)  
+    + 1.2.2 [Package Installation](#1.2.2-Packages-Installation)  
+    + 1.2.3 [Testing](1.2.3-Testing)  
 
-
-    1.3 [Install PostgreSQL](#1.2-Install-PostgreSQL)
+  + 1.3 [Network Configuration File](#1.3-Network-Configuration-File)  
+  + 1.4 [IPTables Settings](#1.4-IPTables-Settings)  
+  + 1.5 [SELinux and PackageKit Settings](#1.5-SELinux-an-PackageKit-settings)  
+  + 1.6 [UMASK Settings](#1.6-UMASK-Settings)  
+  + 1.7 [Databases Creation](#1.7-**Databases**-Creation)  
 
 
 
