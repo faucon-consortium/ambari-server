@@ -17,7 +17,7 @@
     2. Siamese
 
 #### Contents:
-- 1) - [Install Ambari from **Public Packages**](#i.Install-Ambari-from-Public-Packages)
+- 1 - [Install Ambari from **Public Packages**](#i.Install-Ambari-from-Public-Packages)
     - 1.1 - [Create Ambari User](#1-1-Create-Ambari-User)
     - 1.2 - Install Ambari DB Engine:
          - [1.2.1 - Package Repository](#1-2-1-Package-Repository)
