@@ -21,15 +21,21 @@ Ambari enables System Administrators to:
 Ambari enables Application Developers and System Integrators to:
 + Easily integrate Hadoop provisioning, management, and monitoring capabilities to their own applications with the Ambari REST APIs.
 
-1. Dog
-    1. German Shepherd
-    2. Belgian Shepherd
-        1. Malinois
-        2. Groenendael
-        3. Tervuren
+1. [Install Ambari from *Public* Packages**](#1-Install-Ambari-from-Public-Packages)
+    1. [Create Ambari User](#1.1-Create-Ambari-User)
+    2. [Install Ambari DB Engine](#1.2-Install-Ambari-DB-Engine)
+        1. [Package Repository](#1.2.1-Package-Repository)
+        2. [Package Installation](#1.2.2-Packages-Installation)
+        3. [Testing](#1.2.3-Testing)  
+    3. [Network Configuration File](#1.3-Network-Configuration-File)  
+    4. [IPTables Settings](#1.4-IPTables-Settings)
+    5. [SELinux and PackageKit Settings](#1.5-SELinux-an-PackageKit-settings)
+    6. [UMASK Settings](#1.6-UMASK-Settings)
+    
 2. Cat
     1. Siberian
     2. Siamese
+
 
 -----------------------------
 ## Table-of-Contents
